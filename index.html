@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Unique Portfolio</title>
+    <title>Kenth Diaz | Portfolio</title>
     <style>
         /* Global Resets & Variables */
         * {
@@ -53,9 +53,9 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding-bottom: 30px;
+            padding-bottom: 25px;
             border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-            margin-bottom: 40px;
+            margin-bottom: 20px;
         }
 
         .logo {
@@ -82,7 +82,7 @@
         /* Hero Section */
         .hero {
             text-align: center;
-            padding: 60px 0;
+            padding: 30px 0;
         }
 
         .avatar {
@@ -128,7 +128,7 @@
 
         /* Section Styling */
         section {
-            margin-top: 60px;
+            margin-top: 40px;
         }
 
         section h2 {
@@ -161,6 +161,9 @@
             border: 1px solid rgba(255, 255, 255, 0.05);
             border-radius: 16px;
             padding: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
             transition: all 0.3s ease;
         }
 
@@ -181,6 +184,21 @@
             margin-bottom: 15px;
         }
 
+        /* Project Image Fitting Rules */
+        .card-img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            object-position: top; /* Crucial fix: Forces the image to align from the top so it isn't cropped weirdly */
+            border-radius: 12px;
+            margin-bottom: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .tag-container {
+            margin-top: auto;
+        }
+
         .tag {
             display: inline-block;
             background: rgba(0, 223, 216, 0.1);
@@ -190,6 +208,7 @@
             font-size: 0.8rem;
             font-weight: 600;
             margin-right: 5px;
+            margin-top: 5px;
         }
 
         /* Skills badges */
@@ -241,19 +260,19 @@
     <div class="portfolio-container">
         
         <nav>
-            <div class="logo">Computer Technician</div>
+            <div class="logo">Computer Troubleshooting / App Developer</div>
             <div class="nav-links">
                 <a href="#projects">Work</a>
                 <a href="#skills">Skills</a>
-                <a href="kenthdiaz2003@gmail.com">Contact</a>
+                <a href="mailto:kenthdiaz2003@gmail.com">Contact</a>
             </div>
         </nav>
 
         <section class="hero">
-            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80" alt="Profile Avatar" class="avatar">
+            <img src="Portfolio/Kenthh.jpg" alt="Profile Avatar" class="avatar">
             <h1>Hi, I'm Kenth Diaz</h1>
-            <p>A Trained Computer Troubleshooting and Network Diagnose.</p>
-            <a href="mailto:your.email@example.com" class="btn">Let's Collaborate</a>
+            <p>A Trained Computer Troubleshooting and Network Diagnosis Specialist.</p>
+            <a href="mailto:kenthdiaz2003@gmail.com" class="btn">Let's Collaborate</a>
         </section>
 
         <section id="projects">
@@ -261,29 +280,33 @@
             <div class="projects-grid">
                 
                 <div class="card">
-                    <h3>Aether Dashboard</h3>
-                    <p>A futuristic data analytics platform designed with sleek dark-mode layouts and optimized data visualization widgets.</p>
-                    <div>
-                        <span class="tag">HTML/CSS</span>
-                        <span class="tag">UI Design</span>
+                    <h3>Hardware Troubleshooting</h3>
+                    <img src="Portfolio/computer.jpg" alt="Computer Repair" class="card-img">
+                    <p>Diagnosing hardware system faults, performing modular component replacement, and optimizing desktop systems for maximum uptime.</p>
+                    <div class="tag-container">
+                        <span class="tag">Hardware Repair</span>
+                        <span class="tag">Fault Isolation</span>
                     </div>
                 </div>
 
                 <div class="card">
-                    <h3>Nova E-Commerce</h3>
-                    <p>A minimalist luxury storefront utilizing micro-interactions and smooth layout transitions for a premium shopping vibe.</p>
-                    <div>
-                        <span class="tag">JavaScript</span>
-                        <span class="tag">E-com</span>
+                    <h3>Network Diagnostics</h3>
+                    <img src="Portfolio//network.jpg" alt="Network Troubleshooting" class="card-img">
+                    <p>Configuring local network architectures, resolving IP address conflicts, and testing signal degradation across infrastructure lines.</p>
+                    <div class="tag-container">
+                        <span class="tag">CMD</span>
+                        <span class="tag">Routing</span>
+                        <span class="tag">PowerShell</span>
                     </div>
                 </div>
 
                 <div class="card">
-                    <h3>Pulse Mobile App</h3>
-                    <p>Designed and prototyped a mental health tracking application focusing on radical simplicity and soft neon color palettes.</p>
-                    <div>
-                        <span class="tag">Figma</span>
-                        <span class="tag">UX Research</span>
+                    <h3>Mobile App Developer</h3>
+                    <img src="Portfolio/Mobileapp.jpg" alt="Mobile Application Development" class="card-img">
+                    <p>Building high-performance cross-platform applications, engineering smooth user flows, and implementing robust backend integrations.</p>
+                    <div class="tag-container">
+                        <span class="tag">Flutter/Dart</span>
+                        <span class="tag">Android Studio</span>
                     </div>
                 </div>
 
@@ -293,17 +316,17 @@
         <section id="skills">
             <h2>My Toolbox</h2>
             <div class="skills-container">
-                <div class="skill-badge">Frontend Architecture</div>
-                <div class="skill-badge">UI/UX Design</div>
-                <div class="skill-badge">Responsive Layouts</div>
-                <div class="skill-badge">CSS Grid & Flexbox</div>
-                <div class="skill-badge">JavaScript Animation</div>
-                <div class="skill-badge">Figma Prototyping</div>
+                <div class="skill-badge">Hardware Diagnostics</div>
+                <div class="skill-badge">Network Configuration</div>
+                <div class="skill-badge">Component Repair</div>
+                <div class="skill-badge">OS Installation & Imaging</div>
+                <div class="skill-badge">Customer Technical Support</div>
+                <div class="skill-badge">Fiber Optics Installation</div>
             </div>
         </section>
 
         <footer>
-            <p>&copy; 2026 Alex Rivera. Handcrafted with precision.</p>
+            <p>&copy; 2026 Kenth Diaz. Handcrafted with precision.</p>
         </footer>
 
     </div>
